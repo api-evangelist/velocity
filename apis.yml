@@ -1,8 +1,26 @@
 aid: velocity
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/velocity.png
 name: Velocity
-description: 'Velocity is a company surfaced as a portfolio company of insight-partners and added to the
-  API Evangelist network as a stub for enrichment. Sector: devops. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Velocity was an Israeli DevOps / site-reliability-engineering startup that helped
+  engineering teams move faster — originally by letting developers spin up on-demand, fully
+  isolated, production-like development environments, and later by applying AI to automate
+  SRE and major-incident-response workflows so engineers could focus on solving problems
+  instead of chasing alerts. On November 10, 2025 Velocity was acquired by BigPanda (the
+  Insight Partners-backed agentic AIOps / IT operations company) to accelerate its AI
+  Detection and Response product; founder and CEO Tal Kain joined BigPanda as VP of AI
+  Detection and Response. The velocity.tech domain now redirects to bigpanda.io and Velocity
+  no longer operates an independent public developer surface, API, or documentation portal.'
 url: https://raw.githubusercontent.com/api-evangelist/velocity/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +28,23 @@ x-backed-by:
 - insight-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-lifecycle: acquired
+x-acquired-by: bigpanda
+x-acquired-date: '2025-11-10'
+x-acquisition-source: https://www.bigpanda.io/press-release/bigpanda-acquires-velocity/
+x-founder: Tal Kain
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Devops
+- SRE
+- Incident Management
+- Developer Environments
+- AIOps
+- Acquired
+- Israel
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +52,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/velocity-domain-security.yml
 - type: Website
   url: https://velocity.tech/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
